@@ -10,7 +10,7 @@ const SESSION_KEY = 'zenledger_v14_session';
 
 const SESSION_DURATION = 86400000; // 24 hours
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001';
+const API_BASE = import.meta.env.VITE_API_BASE || '';
 
 const getAuthHeaders = (session: Session) => ({
   'Content-Type': 'application/json',
