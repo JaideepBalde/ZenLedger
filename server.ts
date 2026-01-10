@@ -160,7 +160,11 @@ if (NODE_ENV !== 'test') {
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || [
+    'http://localhost:3000',
+    'https://zen-ledger-ca65o6g7n-jaideeps-projects-46dba019.vercel.app',
+    /\.vercel\.app$/
+  ],
   credentials: true,
   optionsSuccessStatus: 200,
 };
