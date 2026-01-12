@@ -1,0 +1,58 @@
+
+ZENLEDGER CLOUD ENTERPRISE - FINAL PRODUCT DOCUMENTATION
+--------------------------------------------------------
+
+1. CORE VALUE PROPOSITION
+ZenLedger is an institutional-grade family financial governance platform. It solves for "Ledger Integrity" by ensuring that capital balances are derived mathematically from chronological transaction streams rather than vulnerable static database fields.
+
+2. SYSTEM ARCHITECTURE
+- Pure Ledger Logic: Derived Balance = Σ(Credits) - Σ(Debits).
+- Role Scoping: Parent (Administrator) vs. Child (Member) node permission isolation.
+- Institutional Branding: Premium, neutral fintech aesthetic (Slate/Indigo/Emerald).
+
+3. KEY SUB-SYSTEMS
+
+A. Analytics Engine (Resume-Grade Math)
+- Derives mean, median, standard deviation (volatility), and min/max stats in real-time.
+- Visualizes spending via custom SVG charts (Category Distribution, Time-Series Expenditure).
+- Calculates "Burn Rate" (average daily liquidity outflow).
+
+B. Secure Messaging
+- Intra-family communication channel restricted by Cloud ID.
+- Parent nodes can broadcast to all child units or direct-message individuals.
+- Immutable history for audit purposes.
+
+C. Administrative Governance (Parent Only)
+- Node Provisioning: Create child handles and passphrases.
+- Capital Injection: Allocate credits to child nodes.
+- Full System Wipe: Safety-checked protocol to purge family ledger records.
+- CSV Portability: Export full ledger, message logs, and analytics for external auditing.
+
+4. LOCAL EXECUTION & DEPLOYMENT
+
+Step 1: Prerequisites
+- Node.js (v20+) and npm.
+
+Step 2: Installation
+- npm install (React 19, Tailwind CSS, Google Gemini SDK).
+
+Step 3: Environment Configuration
+- Create .env:
+  API_KEY=[Gemini API Key for Insights]
+  VITE_USE_CLOUD=true
+  VITE_API_URL=[URL of hosted server.ts]
+  MONGO_URI=[MongoDB Connection String]
+  JWT_SECRET=[Secure JWT Signer]
+
+Step 4: Deployment
+- Frontend: Vercel (Automatic import via GitHub).
+- Backend: Render (Host server.ts).
+- Database: MongoDB Atlas (M0 Free Tier).
+
+5. DEMO ACCESS
+Cloud ID: demo_cluster
+Handle: admin
+Passphrase: pass123
+
+--------------------------------------------------------
+ZenLedger Standard v16.8 • Jaydeep 2026

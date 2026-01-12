@@ -1,0 +1,13 @@
+{
+  "name": "ZenLedger - by JD",
+  "description": "Institutional-grade family wealth governance with AES-256 encryption and AI-driven audit modules.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "infrastructure": {
+    "stack": "Vercel + Render + MongoDB Atlas",
+    "security": "SSL/TLS 1.3 + JWT HS256",
+    "version": "16.8.5-Stable"
+  }
+}
